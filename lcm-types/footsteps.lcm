@@ -1,0 +1,6 @@
+struct footsteps
+{
+  float xpos[4];
+  float ypos[4];
+  float zpos[4];
+}

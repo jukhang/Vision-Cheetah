@@ -1,0 +1,5 @@
+struct heightnew_t
+{
+  float map[101][101];
+
+}

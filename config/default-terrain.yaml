@@ -1,0 +1,234 @@
+ground-plane:
+    type: "infinite-plane"
+    mu: 0.7
+    restitution: 0.0
+    #height: -0.5
+    height: 0.0
+    graphicsSize: [50,50] # how large the plane appears
+    checkers: [100,100]     # how many checkers are on the plane
+	
+
+#mesh-1:
+    type: "mesh"
+    mu: 0.7
+    restitution: 0
+    transparent: 0
+    #grid: 0.005
+    grid: 0.02
+    #left_corner_loc: [-3.33, -3.33, -0]
+    left_corner_loc: [-3, -3, -0]
+    heightmap_file: true
+    #heightmap_file: false 
+    #heightmap_file_name: "pcd_506.txt"
+    #heightmap_file_name: "pcd5060.txt"  
+    #heightmap_file_name: "heightmap_demo.txt"
+    #heightmap_file_name: "heightmap.txt"
+    #heightmap_file_name: "../optimization/optimization_data/2019-02-20-13_09_26/HeightMap.txt"
+    #heightmap_file_name: "../optimization/optimization_data/2019-02-20-11_11_36/HeightMap.txt"
+    #heightmap_file_name: "../optimization/optimization_data/2019-03-03-00_00_00/HeightMap.txt"
+    #heightmap_file_name: "../optimization/optimization_data/2019-03-04-00_00_00/heightmap2_fixed.txt"
+    #heightmap_file_name: "../optimization/optimization_data/2019-03-05-00_00_01/manual_heightmap.txt"
+    #heightmap_file_name: "../optimization/optimization_data/2019-03-05-00_00_02/manual_heightmap.txt"
+    #heightmap_file_name: "../optimization/optimization_data/2019-03-05-00_00_03/heightmap.txt"
+    #heightmap_file_name: "../algorithms/optimization/saved_optimization_data/2019-03-05-00_00_03_2/HeightMap.txt"
+
+#box-1:
+    type: "box"
+    mu: 0.7
+    restitution: 0
+    depth: 0.5
+    width: 1.5
+    height: 0.05
+    position:  [0.5, 0.0, 0.025]
+    orientation: [0,0,0]  # roll pitch yaw
+    transparent: 0
+
+#box-2:
+    type: "box"
+    mu: 0.7
+    restitution: 0
+    depth: 0.05
+    width: 0.05
+    height: 0.05
+    position:  [0.25, 0,0.025]
+    orientation: [0,0,0]  # roll pitch yaw
+    transparent: 0
+
+#box-3:
+    type: "box"
+    mu: 0.7
+    restitution: 0
+    depth: 0.05
+    width: 0.05
+    height: 0.05
+    position:  [0.2,0,0.025]
+    orientation: [0,0,0]  # roll pitch yaw
+    transparent: 0
+
+#box-4:
+    type: "box"
+    mu: 0.7
+    restitution: 0
+    depth: 0.05
+    width: 0.05
+    height: 0.05
+    position:  [0.2, 0.05, 0.025]
+    orientation: [0,.0,0]  # roll pitch yaw
+    transparent: 0
+
+#box-2:
+    type: "box"
+    mu: 0.7
+    restitution: 0
+    depth: 1
+    width: 1.2
+    height: .25
+    #position:  [1.5, 0, 0.025]
+    position:  [3, 0., 0.125]
+    orientation: [0,.0,0]  # roll pitch yaw
+    transparent: 0
+
+
+#box-2:
+    #type: "box"
+    #mu: 0.7
+    #restitution: 0
+    #depth: 0.45
+    #width: 0.6
+    #height: .1
+    #position:  [1.175, 0, -0.48]
+    #orientation: [0,.0,0]  # roll pitch yaw
+    #transparent: 1
+
+#stairs-2:
+    #type: "stairs"
+    #steps: 8
+    #rise: 0.1778 # 7 inches
+    #run: 0.2794 # 11 inches
+    #width: 1.2
+    #mu: .7
+    #restitution: 0
+    #position: [1,-2,-0.5]
+    #orientation: [.2, -.4, 1.5]
+    #transparent: 0
+#bridge
+# 0：不透明，1：透明
+#box-44:
+    type: "box"
+    mu: 0.7
+    restitution: 0
+    #depth: 1.1
+    depth: 1.2
+    width: 0.8
+    height: .042
+    position:  [1.3, 0, 0.1]
+    #position:  [3, 0., 0.225]
+    orientation: [0,.0,0]  # roll pitch yaw
+    transparent: 0
+#box-55:
+    type: "box"
+    mu: 0.7
+    restitution: 0
+    #depth: 1.1
+    depth: 1.2
+    width: 0.8
+    height: .052
+    position:  [1.4, 0, 0.125]
+    #position:  [3, 0., 0.225]
+    orientation: [0,.0,0]  # roll pitch yaw
+    transparent: 0
+#box-66:
+    type: "box"
+    mu: 0.7
+    restitution: 0
+    #depth: 1.1
+    depth: 1.2
+    width: 0.8
+    height: .062
+    position:  [1.5, 0, 0.15]
+    #position:  [3, 0., 0.225]
+    orientation: [0,.0,0]  # roll pitch yaw
+    transparent: 0
+
+
+
+#stairs-4:
+    type: "stairs"
+    steps: 3
+    rise: 0.04 #0.1778 # 7 inches
+    run: 0.20 #0.2794 # 11 inches
+    width: 0.8
+    mu: .7
+    restitution: 0
+    #position: [0.5, 0, -0.52]
+    position: [0.28, 0, 0.0]
+    orientation: [0, 0, 0]
+    transparent: 0
+
+#stairs-5:
+    type: "stairs"
+    steps: 3
+    rise: 0.05 #0.1778 # 7 inches
+    run: 0.20 #0.2794 # 11 inches
+    width: 0.8
+    mu: .7
+    restitution: 0
+    #position: [0.5, 0, -0.52]
+    position: [0.28, 0, 0.0]
+    orientation: [0, 0, 0]
+    transparent: 0
+
+#stairs-6:
+    type: "stairs"
+    steps: 3
+    rise: 0.06 #0.1778 # 7 inches
+    run: 0.22 #0.2794 # 11 inches
+    width: 0.8
+    mu: .7
+    restitution: 0
+    #position: [0.5, 0, -0.52]
+    position: [0.28, 0, 0.0]
+    orientation: [0, 0, 0]
+    transparent: 0
+
+#stairs-2:
+    type: "stairs"
+    steps: 5
+    rise: 0.05 #0.1778 # 7 inches
+    run: 0.2 #0.2794 # 11 inches
+    width: 0.8
+    mu: .7
+    restitution: 0
+    #position: [0.5, 0, -0.52]
+    position: [4, 0, 0.0]
+    orientation: [0, 0, 3.14]
+    transparent: 0
+
+#bridge
+#box-2:
+    type: "box"
+    mu: 0.7
+    restitution: 1
+    depth: 1.1
+    width: 1.2
+    height: .11
+    #position:  [1.5, 0, 0.025]
+    position:  [1.85, 0., 0.05]
+    orientation: [0,.0,0]  # roll pitch yaw
+    transparent: 0
+# 0：不透明，1：透明
+
+
+#stairs-1:
+    type: "stairs"
+    steps: 3
+    rise: 0.035 #0.1778 # 7 inches
+    run: 0.2 #0.2794 # 11 inches
+    width: 1.2
+    mu: .7
+    restitution: 1
+    position: [0.72, 0, 0.0]
+    #position: [2.0, 0, 0.0]
+    orientation: [0, 0, 0]
+    transparent: 0
+

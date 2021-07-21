@@ -1,0 +1,5 @@
+struct heightmap333_t
+{
+  float map[300][300];
+
+}
