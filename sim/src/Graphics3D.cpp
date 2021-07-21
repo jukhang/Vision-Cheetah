@@ -684,7 +684,7 @@ void Graphics3D::_drawboxheightmap() {
     box.rpy={0,0,0};
     for (int i(0); i<_map.rows()-1;++i){
         for (int j(0); j < _map.cols()-1; ++j) {
-           if (_map(i,j)>0.02){
+        //    if (_map(i,j)>0.02){
                 if (idx_map(i,j)>=0. && idx_map(i,j)<=0.1)
                     box.color={0,0.5,1,1.0};//blue
                 else if (idx_map(i,j)>0.1 && idx_map(i,j)<=1.5)
@@ -709,14 +709,14 @@ void Graphics3D::_drawboxheightmap() {
 
                 _drawBlock(box);
 
-                double ori[3]={0,.0,0};
-                Mat3<double> R_box=ori::rpyToRotMat(Vec3<double>(ori));
-                double pos[3];
-                pos[0]=pos_x;
-                pos[1]=pos_y;
-                pos[2]=0.015; //z
-                drawCollisionBox(0.7, 0, 0.02, 0.02, 0.03, Vec3<double>(pos), R_box);
-            }
+                // double ori[3]={0,.0,0};
+                // Mat3<double> R_box=ori::rpyToRotMat(Vec3<double>(ori));
+                // double pos[3];
+                // pos[0]=pos_x;
+                // pos[1]=pos_y;
+                // pos[2]=0.015; //z
+                // drawCollisionBox(0.7, 0, 0.02, 0.02, 0.03, Vec3<double>(pos), R_box);
+            // }
         }
     }
 
@@ -728,11 +728,11 @@ void Graphics3D::drawCollisionBox(double mu, double resti, double depth,
                                   const Mat3<double>& ori
 ) {
     _simulator->addCollisionBox(mu, resti, depth, width, height, pos, ori);
-   if ( _window) {
-       _window->lockGfxMutex();
-       _window->_drawList.addBox(depth, width, height, pos, ori, transparent);
-       _window->unlockGfxMutex();
-   }
+//    if ( _window) {
+//        _window->lockGfxMutex();
+//        _window->_drawList.addBox(depth, width, height, pos, ori, transparent);
+//        _window->unlockGfxMutex();
+//    }
 }
 
 /**
@@ -1034,6 +1034,11 @@ void Graphics3D::_Additional_Drawing(int pass) {
         _drawboxheightmap();
         _drawHeightMap();
         _BoxObstacleDrawing();
+
+        // 源
+        // _drawboxheightmap();
+        // _drawHeightMap();
+        // _BoxObstacleDrawing();
 
     }//实时更新网格高度地图
 
