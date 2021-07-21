@@ -26,16 +26,16 @@
  * Setup QT and run a simulation
  */
 int main(int argc, char *argv[]) {
-  install_segfault_handler(nullptr);
-  // set up Qt
-  QApplication a(argc, argv);
+    install_segfault_handler(nullptr);
+    // set up Qt
+    QApplication a(argc, argv);
 
-  // open simulator UI
-  SimControlPanel panel;
-  panel.show();
+    // open simulator UI
+    SimControlPanel panel;
+    panel.show();
 
-  // run the Qt program
-  a.exec();
+    // run the Qt program
+    a.exec();
 
-  return 0;
+    return 0;
 }

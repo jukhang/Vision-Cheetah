@@ -1,3 +1,9 @@
+### MIT Cheetah 视觉规划
+
+[参考1: MIT Cheetah](https://github.com/mit-biomimetics/Cheetah-Software)
+[参考2: Cheetah-Software-Vision](https://github.com/AWang-Cabin/Cheetah-Software-Vision)
+
+
 # Cheetah-Software-Vision
 ![Mini_on_stairs](https://user-images.githubusercontent.com/69251304/119980322-b4b7d400-bfee-11eb-9942-0f10758e8b6b.png)
 This repository contains the Robot and Simulation software project.  For a getting started guide, see the documentation folder.
